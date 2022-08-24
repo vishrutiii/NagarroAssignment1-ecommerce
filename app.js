@@ -13,7 +13,8 @@ const authRoutes = require("./routes/auth");
 
 mongoose
   .connect(
-    mongodb+srv:Vishrutiii:vishruti1102@cluster0.kky45.mongodb.net/?retryWrites=true&w=majority      
+    "mongodb+srv://Vishrutiii:vishruti1102@cluster0.kky45.mongodb.net/?retryWrites=true&w=majority",
+    {     
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useFindAndModify: false,
@@ -43,7 +44,7 @@ app.use(methodOverride("_method"));
 
 //.env file bnate hai usemdaalte hai
 const sessionConfig = {
-  secret: "Kartik Kapil",
+  secret: "vishruti",
   resave: false,
   saveUninitialized: true,
 };
